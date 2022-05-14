@@ -12,11 +12,11 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://www.dropbox.com/s/8918s8z3py6jq7r/Control-IP")
+  permited=$(curl -sSL "https://www.dropbox.com/s/smd8rfdesfyf00c/control-ip")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
-  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!\n     SI DESEAS USAR EL BOTGEN CONTACTE A @Rufu99"
+  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!\n     SI DESEAS USAR EL BOTGEN CONTACTE A @Axel"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
 [[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
