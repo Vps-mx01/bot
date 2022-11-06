@@ -12,7 +12,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://www.dropbox.com/s/smd8rfdesfyf00c/control-ip")
+  permited=$(curl -sSL "https://raw.githubusercontent.com/Vps-mx01/Control/master/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
